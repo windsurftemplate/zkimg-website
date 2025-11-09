@@ -78,12 +78,19 @@ body::before {
     align-items: center;
     gap: 0.75rem;
     font-size: 1.5rem;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--color-text);
 }
 
+.nav-logo .logo-text {
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
 .logo-icon {
-    font-size: 2rem;
+    width: 40px;
+    height: 40px;
 }
 
 .nav-menu {
@@ -336,6 +343,13 @@ body::before {
 .problem-icon {
     font-size: 3rem;
     margin-bottom: 1.5rem;
+}
+
+.problem-icon img,
+.use-case-icon img,
+.tech-icon img {
+    width: 64px;
+    height: 64px;
 }
 
 .problem-card h3 {
@@ -910,8 +924,14 @@ body::before {
     justify-content: center;
     gap: 0.75rem;
     font-size: 1.5rem;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 1rem;
+}
+
+.footer-logo .logo-text {
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
 .footer p {
@@ -919,9 +939,12 @@ body::before {
     margin: 0.5rem 0;
 }
 
-.footer-disclaimer {
-    font-size: 0.875rem;
-    margin-top: 1rem;
+.footer-mission {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 1.5rem 0 1rem 0;
+    font-style: italic;
 }
 
 /* Responsive Design */

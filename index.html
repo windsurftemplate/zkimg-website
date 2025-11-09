@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rial | Cryptographically Verifiable Image Authenticity</title>
-    <meta name="description" content="Privacy-preserving image verification using zero-knowledge proofs. Prove image integrity without revealing sensitive metadata.">
+    <meta name="description" content="Rial builds zero-knowledge authentication infrastructure that proves digital images are real — captured on real devices, at real times and places — without exposing private data.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -16,7 +16,7 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="nav-logo">
-                    <span class="logo-icon">🔐</span>
+                    <img src="images/logo.svg" alt="Rial" class="logo-icon">
                     <span class="logo-text">Rial</span>
                 </div>
                 <ul class="nav-menu">
@@ -79,28 +79,28 @@
 
             <div class="problem-grid">
                 <div class="problem-card">
-                    <div class="problem-icon">⚖️</div>
+                    <div class="problem-icon"><img src="images/icon-scales.svg" alt="Legal"></div>
                     <h3>Legal & Compliance</h3>
                     <p>Digital evidence is inadmissible if authenticity can't be proven. Chain-of-custody breaks with metadata tampering.</p>
                     <div class="problem-stat">Courts reject 40% of digital evidence</div>
                 </div>
 
                 <div class="problem-card">
-                    <div class="problem-icon">🏥</div>
+                    <div class="problem-icon"><img src="images/icon-hospital.svg" alt="Insurance"></div>
                     <h3>Insurance Claims</h3>
                     <p>Fraudsters submit AI-generated damage photos. Adjusters can't tell what's real. Claims costs skyrocket.</p>
                     <div class="problem-stat">$12B lost annually to photo fraud</div>
                 </div>
 
                 <div class="problem-card">
-                    <div class="problem-icon">📰</div>
+                    <div class="problem-icon"><img src="images/icon-newspaper.svg" alt="Journalism"></div>
                     <h3>Journalism & OSINT</h3>
                     <p>Fake news spreads through manipulated images. Deepfakes erode trust. No reliable way to verify sources.</p>
                     <div class="problem-stat">73% don't trust online images</div>
                 </div>
 
                 <div class="problem-card">
-                    <div class="problem-icon">🏢</div>
+                    <div class="problem-icon"><img src="images/icon-building.svg" alt="Enterprise"></div>
                     <h3>Enterprise Audits</h3>
                     <p>Field inspections, deliveries, and documentation photos can be fabricated. Compliance becomes impossible.</p>
                     <div class="problem-stat">2.1M fake inspection photos/year</div>
@@ -184,19 +184,19 @@
 
             <div class="solution-benefits">
                 <div class="benefit-card">
-                    <h3>✅ Mathematically Provable</h3>
+                    <h3><img src="images/icon-check.svg" alt="Check" style="width: 32px; height: 32px; vertical-align: middle; margin-right: 8px;">Mathematically Provable</h3>
                     <p>Cryptographic proof, not AI guessing. Can't be forged without breaking advanced cryptography.</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>🔒 Privacy-Preserving</h3>
+                    <h3><img src="images/icon-lock.svg" alt="Lock" style="width: 32px; height: 32px; vertical-align: middle; margin-right: 8px;">Privacy-Preserving</h3>
                     <p>Prove authenticity without revealing GPS, timestamp, or image content. Zero-knowledge by design.</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>🚫 No Central Authority</h3>
+                    <h3><img src="images/icon-shield.svg" alt="Shield" style="width: 32px; height: 32px; vertical-align: middle; margin-right: 8px;">No Central Authority</h3>
                     <p>Verification works peer-to-peer. No single point of failure or control.</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>📱 Hardware-Backed</h3>
+                    <h3><img src="images/icon-photo.svg" alt="Mobile" style="width: 32px; height: 32px; vertical-align: middle; margin-right: 8px;">Hardware-Backed</h3>
                     <p>Keys stored in iOS Secure Enclave. Device attestation prevents tampering.</p>
                 </div>
             </div>
@@ -212,7 +212,7 @@
 
             <div class="use-case-grid">
                 <div class="use-case-card">
-                    <div class="use-case-icon">🏥</div>
+                    <div class="use-case-icon"><img src="images/icon-hospital.svg" alt="Insurance"></div>
                     <h3>Insurance & Claims</h3>
                     <p><strong>Problem:</strong> Fraudulent damage photos cost insurers billions annually.</p>
                     <p><strong>Solution:</strong> Cryptographically verify photos were taken in-field, not AI-generated.</p>
@@ -225,7 +225,7 @@
                 </div>
 
                 <div class="use-case-card">
-                    <div class="use-case-icon">⚖️</div>
+                    <div class="use-case-icon"><img src="images/icon-scales.svg" alt="Legal"></div>
                     <h3>Legal & Compliance</h3>
                     <p><strong>Problem:</strong> Digital evidence inadmissible without proven chain-of-custody.</p>
                     <p><strong>Solution:</strong> Cryptographic proof of origin, integrity, and transformation history.</p>
@@ -238,7 +238,7 @@
                 </div>
 
                 <div class="use-case-card">
-                    <div class="use-case-icon">📰</div>
+                    <div class="use-case-icon"><img src="images/icon-newspaper.svg" alt="Journalism"></div>
                     <h3>Journalism & OSINT</h3>
                     <p><strong>Problem:</strong> Fake news spreads through manipulated imagery. No way to verify sources.</p>
                     <p><strong>Solution:</strong> Verify original photos cryptographically without revealing sources.</p>
@@ -251,7 +251,7 @@
                 </div>
 
                 <div class="use-case-card">
-                    <div class="use-case-icon">🏢</div>
+                    <div class="use-case-icon"><img src="images/icon-building.svg" alt="Enterprise"></div>
                     <h3>Enterprise Audits</h3>
                     <p><strong>Problem:</strong> Field inspections, deliveries, documentation can be faked.</p>
                     <p><strong>Solution:</strong> Prove work completion with cryptographically signed photos.</p>
@@ -264,7 +264,7 @@
                 </div>
 
                 <div class="use-case-card">
-                    <div class="use-case-icon">💬</div>
+                    <div class="use-case-icon"><img src="images/icon-chat.svg" alt="Social Media"></div>
                     <h3>Social & Messaging Platforms</h3>
                     <p><strong>Problem:</strong> Users don't know if images are real or AI-generated.</p>
                     <p><strong>Solution:</strong> Label verified real-world media without exposing metadata.</p>
@@ -277,7 +277,7 @@
                 </div>
 
                 <div class="use-case-card">
-                    <div class="use-case-icon">🏗️</div>
+                    <div class="use-case-icon"><img src="images/icon-construction.svg" alt="Construction"></div>
                     <h3>Construction & Infrastructure</h3>
                     <p><strong>Problem:</strong> Progress photos can be backdated or fabricated for billing.</p>
                     <p><strong>Solution:</strong> Time-stamped cryptographic proof of project milestones.</p>
@@ -304,7 +304,7 @@
 
             <div class="tech-features">
                 <div class="tech-feature">
-                    <div class="tech-icon">🔐</div>
+                    <div class="tech-icon"><img src="images/icon-lock.svg" alt="Zero-Knowledge"></div>
                     <h3>Zero-Knowledge Image Proofs</h3>
                     <p>Prove image integrity and allowed transformations without exposing the original photo.</p>
                     <ul>
@@ -316,7 +316,7 @@
                 </div>
 
                 <div class="tech-feature">
-                    <div class="tech-icon">📱</div>
+                    <div class="tech-icon"><img src="images/icon-photo.svg" alt="Mobile"></div>
                     <h3>Hardware-Backed Security</h3>
                     <p>Keys stored in iOS Secure Enclave. App Attestation ensures only legitimate clients generate proofs.</p>
                     <ul>
@@ -328,7 +328,7 @@
                 </div>
 
                 <div class="tech-feature">
-                    <div class="tech-icon">📜</div>
+                    <div class="tech-icon"><img src="images/icon-chip.svg" alt="C2PA"></div>
                     <h3>C2PA Compatibility</h3>
                     <p>Outputs verifiable C2PA-style claims with Merkle roots and timestamps.</p>
                     <ul>
@@ -340,7 +340,7 @@
                 </div>
 
                 <div class="tech-feature">
-                    <div class="tech-icon">🛡️</div>
+                    <div class="tech-icon"><img src="images/icon-shield.svg" alt="Security"></div>
                     <h3>Fraud Detection Pipeline</h3>
                     <p>Multi-layer verification catches screenshots, stock imagery, and GPS/time spoofing.</p>
                     <ul>
@@ -475,15 +475,15 @@
                 <h3>Deployment Models</h3>
                 <div class="deployment-grid">
                     <div class="deployment-card">
-                        <h4>☁️ Cloud API</h4>
+                        <h4><img src="images/icon-cloud.svg" alt="Cloud" style="width: 32px; height: 32px; vertical-align: middle; margin-right: 8px;">Cloud API</h4>
                         <p>Hosted by Rial (SaaS). Start verifying in minutes. No infrastructure required.</p>
                     </div>
                     <div class="deployment-card">
-                        <h4>🏢 On-Prem / Private Node</h4>
+                        <h4><img src="images/icon-server.svg" alt="Server" style="width: 32px; height: 32px; vertical-align: middle; margin-right: 8px;">On-Prem / Private Node</h4>
                         <p>For regulated industries. Full control over data and compliance. Deploy in your VPC.</p>
                     </div>
                     <div class="deployment-card">
-                        <h4>📱 Edge SDK</h4>
+                        <h4><img src="images/icon-photo.svg" alt="Mobile" style="width: 32px; height: 32px; vertical-align: middle; margin-right: 8px;">Edge SDK</h4>
                         <p>Capture-time authentication in mobile apps. Proof generation on-device.</p>
                     </div>
                 </div>
@@ -525,11 +525,11 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <span class="logo-icon">🔐</span>
+                    <img src="images/logo.svg" alt="Rial" class="logo-icon">
                     <span class="logo-text">Rial</span>
                 </div>
+                <p class="footer-mission">To restore trust in digital information by making authenticity verifiable through math, not opinion.</p>
                 <p>&copy; 2025 Rial. All rights reserved.</p>
-                <p class="footer-disclaimer">Built with zero-knowledge cryptography. Privacy-preserving by design.</p>
             </div>
         </div>
     </footer>
