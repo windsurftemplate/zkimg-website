@@ -266,9 +266,10 @@
                         <div class="download-option-icon">📱</div>
                         <h3>Direct APK</h3>
                         <p>Download and install the APK file directly on your Android device</p>
-                        <a href="#" class="download-btn" id="download-apk">
+                        <a href="rial-app.apk" class="download-btn" id="download-apk" download="rial-app-v0.1.0.apk">
                             Download APK (v0.1.0)
                         </a>
+                        <p style="font-size: 0.75rem; color: #64748b; margin-top: 0.5rem;">~15 MB</p>
                     </div>
 
                     <div class="download-option">
@@ -483,16 +484,10 @@
     </footer>
 
     <script>
-        // Placeholder for APK download
-        // Replace this URL with your actual APK hosting location
+        // Track download clicks (optional analytics)
         document.getElementById('download-apk').addEventListener('click', function(e) {
-            e.preventDefault();
-
-            // Option 1: Direct download from GitHub Releases (when you publish)
-            // window.location.href = 'https://github.com/windsurftemplate/rial/releases/download/v0.1.0/rial-sample-app.apk';
-
-            // Option 2: For now, show instructions
-            alert('APK Download:\n\nTo get the APK:\n\n1. Build from source using ./gradlew build\n2. Find APK in: android-sdk/sample-app/build/outputs/apk/debug/\n3. Or contact us for a pre-built version\n\nGitHub: https://github.com/windsurftemplate/rial');
+            // You can add analytics tracking here if needed
+            console.log('APK download initiated');
         });
     </script>
 </body>
