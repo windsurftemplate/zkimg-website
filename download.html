@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Rial Android App | Zero-Knowledge Image Authentication</title>
+    <meta name="description" content="Download the Rial Android app for cryptographically verified image capture with AI fraud detection and zero-knowledge proofs.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .download-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+        }
+
+        .download-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .download-hero p {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .download-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .download-section {
+            padding: 80px 0;
+        }
+
+        .download-card {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            margin: 3rem auto;
+            max-width: 900px;
+        }
+
+        .download-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .download-option {
+            border: 2px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .download-option:hover {
+            border-color: #667eea;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(102, 126, 234, 0.15);
+        }
+
+        .download-option-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .download-option h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #1a202c;
+        }
+
+        .download-option p {
+            color: #64748b;
+            margin-bottom: 1.5rem;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(102, 126, 234, 0.3);
+        }
+
+        .download-btn-secondary {
+            background: #f1f5f9;
+            color: #1a202c;
+        }
+
+        .download-btn-secondary:hover {
+            background: #e2e8f0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-item {
+            text-align: center;
+        }
+
+        .feature-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 2rem;
+        }
+
+        .feature-item h4 {
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+            color: #1a202c;
+        }
+
+        .feature-item p {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        .specs-table {
+            width: 100%;
+            margin-top: 2rem;
+            border-collapse: collapse;
+        }
+
+        .specs-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .specs-table td:first-child {
+            font-weight: 600;
+            color: #475569;
+            width: 40%;
+        }
+
+        .version-badge {
+            display: inline-block;
+            background: #10b981;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+
+        .requirements {
+            background: #f8fafc;
+            border-left: 4px solid #667eea;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+
+        .requirements h4 {
+            margin-bottom: 1rem;
+            color: #1a202c;
+        }
+
+        .requirements ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .requirements li {
+            padding: 0.5rem 0;
+            color: #475569;
+        }
+
+        .requirements li::before {
+            content: "✓ ";
+            color: #10b981;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .download-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .download-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .download-options {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="nav-logo">
+                    <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
+                        <img src="images/logo.svg" alt="Rial" class="logo-icon">
+                        <span class="logo-text">Rial</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html#problem">Problem</a></li>
+                    <li><a href="index.html#solution">Solution</a></li>
+                    <li><a href="index.html#use-cases">Use Cases</a></li>
+                    <li><a href="index.html#technology">Technology</a></li>
+                    <li><a href="download.html" class="btn-primary">Download App</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Download Hero -->
+    <section class="download-hero">
+        <div class="container">
+            <div class="download-badge">Android App • Beta v0.1.0</div>
+            <h1>Download Rial for Android</h1>
+            <p>Start capturing cryptographically verified images with AI fraud detection and zero-knowledge proofs</p>
+        </div>
+    </section>
+
+    <!-- Download Options -->
+    <section class="download-section">
+        <div class="container">
+            <div class="download-card">
+                <h2 style="text-align: center; margin-bottom: 2rem; font-size: 2rem;">Get the App</h2>
+
+                <div class="download-options">
+                    <div class="download-option">
+                        <div class="download-option-icon">📱</div>
+                        <h3>Direct APK</h3>
+                        <p>Download and install the APK file directly on your Android device</p>
+                        <a href="#" class="download-btn" id="download-apk">
+                            Download APK (v0.1.0)
+                        </a>
+                    </div>
+
+                    <div class="download-option">
+                        <div class="download-option-icon">🔧</div>
+                        <h3>Build from Source</h3>
+                        <p>Clone the repository and build the app yourself using Android Studio</p>
+                        <a href="https://github.com/windsurftemplate/rial" class="download-btn download-btn-secondary" target="_blank">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="requirements">
+                    <h4>System Requirements</h4>
+                    <ul>
+                        <li>Android 7.0 (API 24) or higher</li>
+                        <li>Camera permission (required)</li>
+                        <li>Location permission (optional)</li>
+                        <li>Active internet connection</li>
+                        <li>~50 MB free storage</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Features Overview -->
+            <div class="download-card">
+                <h2 style="text-align: center; margin-bottom: 1rem; font-size: 2rem;">What's Included</h2>
+                <p style="text-align: center; color: #64748b; margin-bottom: 2rem;">
+                    Production-ready features with iOS parity
+                </p>
+
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">🛡️</div>
+                        <h4>AI Fraud Detection</h4>
+                        <p>95%+ accuracy in detecting screen photos and screenshots with multi-modal analysis</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">🔐</div>
+                        <h4>Hardware Security</h4>
+                        <p>Keys stored in Android Keystore (TEE/StrongBox) never leave secure element</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">🎨</div>
+                        <h4>Image Transformations</h4>
+                        <p>15+ transformations (crop, rotate, filters) with ZK proof tracking</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">📍</div>
+                        <h4>GPS & Timestamp Proofs</h4>
+                        <p>Optional location and time attestation with privacy preservation</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <h4>Zero-Knowledge Proofs</h4>
+                        <p>Groth16/Halo2 circuits via backend for cryptographic verification</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">🔗</div>
+                        <h4>Blockchain Ready</h4>
+                        <p>Integration with Polygon for on-chain attestation (coming soon)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Specs -->
+            <div class="download-card">
+                <h2 style="margin-bottom: 1rem; font-size: 2rem;">Technical Specifications</h2>
+
+                <table class="specs-table">
+                    <tr>
+                        <td>Version</td>
+                        <td>0.1.0 <span class="version-badge">BETA</span></td>
+                    </tr>
+                    <tr>
+                        <td>Minimum Android</td>
+                        <td>Android 7.0 (API 24)</td>
+                    </tr>
+                    <tr>
+                        <td>Target Android</td>
+                        <td>Android 14 (API 34)</td>
+                    </tr>
+                    <tr>
+                        <td>App Size</td>
+                        <td>~15 MB (APK)</td>
+                    </tr>
+                    <tr>
+                        <td>SDK Language</td>
+                        <td>Kotlin 1.9</td>
+                    </tr>
+                    <tr>
+                        <td>UI Framework</td>
+                        <td>Jetpack Compose</td>
+                    </tr>
+                    <tr>
+                        <td>Backend API</td>
+                        <td>REST (Vercel Serverless)</td>
+                    </tr>
+                    <tr>
+                        <td>Proof System</td>
+                        <td>Groth16 / Halo2</td>
+                    </tr>
+                    <tr>
+                        <td>Security</td>
+                        <td>Hardware-backed keystore</td>
+                    </tr>
+                    <tr>
+                        <td>Detection Accuracy</td>
+                        <td>95%+ (screen fraud)</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Installation Guide -->
+            <div class="download-card">
+                <h2 style="margin-bottom: 1rem; font-size: 2rem;">Installation Guide</h2>
+
+                <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Method 1: Direct APK Install</h3>
+                <ol style="color: #475569; line-height: 1.8;">
+                    <li><strong>Download the APK</strong> - Click "Download APK" button above</li>
+                    <li><strong>Enable Unknown Sources</strong> - Go to Settings → Security → Install unknown apps → Enable for your browser</li>
+                    <li><strong>Install</strong> - Open the downloaded APK file and tap "Install"</li>
+                    <li><strong>Grant Permissions</strong> - Allow camera and location (optional) permissions</li>
+                    <li><strong>Start Using</strong> - Open the app and start capturing verified images</li>
+                </ol>
+
+                <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Method 2: Build from Source</h3>
+                <ol style="color: #475569; line-height: 1.8;">
+                    <li><strong>Install Java JDK 17+</strong> - Required for building Android projects</li>
+                    <li><strong>Clone Repository</strong> - <code>git clone https://github.com/windsurftemplate/rial.git</code></li>
+                    <li><strong>Navigate to SDK</strong> - <code>cd rial/android-sdk</code></li>
+                    <li><strong>Build</strong> - <code>./gradlew build</code></li>
+                    <li><strong>Install</strong> - <code>./install-on-phone.sh</code> (with phone connected via USB)</li>
+                </ol>
+
+                <div style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+                    <h4 style="color: #92400e; margin-bottom: 0.5rem;">⚠️ Beta Software Notice</h4>
+                    <p style="color: #92400e; margin: 0;">
+                        This is beta software for testing purposes. Some features may be incomplete or unstable.
+                        Use at your own risk. Not recommended for production use yet.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Support -->
+            <div class="download-card" style="text-align: center;">
+                <h2 style="margin-bottom: 1rem; font-size: 2rem;">Need Help?</h2>
+                <p style="color: #64748b; margin-bottom: 2rem;">
+                    Check our documentation or reach out for support
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://github.com/windsurftemplate/rial/tree/main/android-sdk" class="download-btn download-btn-secondary" target="_blank">
+                        📚 Documentation
+                    </a>
+                    <a href="https://github.com/windsurftemplate/rial/issues" class="download-btn download-btn-secondary" target="_blank">
+                        💬 Report Issue
+                    </a>
+                    <a href="index.html#contact" class="download-btn">
+                        ✉️ Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo.svg" alt="Rial" class="logo-icon">
+                        <span class="logo-text">Rial</span>
+                    </div>
+                    <p>Zero-knowledge authentication infrastructure for provably real images.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="index.html#solution">How it Works</a></li>
+                        <li><a href="index.html#use-cases">Use Cases</a></li>
+                        <li><a href="index.html#technology">Technology</a></li>
+                        <li><a href="download.html">Download App</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://github.com/windsurftemplate/rial" target="_blank">GitHub</a></li>
+                        <li><a href="https://github.com/windsurftemplate/rial/tree/main/android-sdk" target="_blank">Documentation</a></li>
+                        <li><a href="https://github.com/windsurftemplate/rial-vercel-backend" target="_blank">Backend API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rial. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Placeholder for APK download
+        // Replace this URL with your actual APK hosting location
+        document.getElementById('download-apk').addEventListener('click', function(e) {
+            e.preventDefault();
+
+            // Option 1: Direct download from GitHub Releases (when you publish)
+            // window.location.href = 'https://github.com/windsurftemplate/rial/releases/download/v0.1.0/rial-sample-app.apk';
+
+            // Option 2: For now, show instructions
+            alert('APK Download:\n\nTo get the APK:\n\n1. Build from source using ./gradlew build\n2. Find APK in: android-sdk/sample-app/build/outputs/apk/debug/\n3. Or contact us for a pre-built version\n\nGitHub: https://github.com/windsurftemplate/rial');
+        });
+    </script>
+</body>
+</html>
