@@ -286,6 +286,39 @@
                 </div>
             </div>
 
+            <!-- What's New -->
+            <div class="download-card" style="background: linear-gradient(135deg, #f0f9ff 0%, #f5f3ff 100%); border: 2px solid #0ea5e9;">
+                <h2 style="text-align: center; margin-bottom: 1rem; font-size: 2rem;">✨ Latest Update (v0.1.0)</h2>
+                <p style="text-align: center; color: #0369a1; margin-bottom: 2rem; font-weight: 600;">
+                    November 13, 2025 - Major Bug Fixes
+                </p>
+
+                <div style="background: white; border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem;">
+                    <h3 style="color: #0ea5e9; margin-bottom: 1rem; font-size: 1.25rem;">🔧 Fixed: Verify Existing Photo</h3>
+                    <ul style="color: #475569; line-height: 1.8; margin: 0;">
+                        <li><strong>EXIF Metadata Integration</strong> - Proof IDs now embedded in image metadata for future verification</li>
+                        <li><strong>Backend Verification</strong> - Existing photos now verified through Rial API using stored proof IDs</li>
+                        <li><strong>Error Handling</strong> - Clear messages when photos weren't captured with Rial SDK</li>
+                        <li><strong>Timestamp Display</strong> - Verification results now show original capture timestamp</li>
+                    </ul>
+                </div>
+
+                <div style="background: white; border-radius: 12px; padding: 2rem;">
+                    <h3 style="color: #8b5cf6; margin-bottom: 1rem; font-size: 1.25rem;">🚀 How It Works</h3>
+                    <ol style="color: #475569; line-height: 1.8; margin: 0;">
+                        <li><strong>Capture Photo</strong> - Take a photo with the app and submit it</li>
+                        <li><strong>Automatic Tagging</strong> - Proof ID written to image EXIF metadata (format: RIAL_PROOF:xxx)</li>
+                        <li><strong>Verify Later</strong> - Select any previously captured photo from gallery</li>
+                        <li><strong>Backend Validation</strong> - App reads proof ID from EXIF and verifies with Rial API</li>
+                        <li><strong>Results</strong> - See verification status, timestamp, and verification URL</li>
+                    </ol>
+                </div>
+
+                <p style="text-align: center; color: #64748b; margin-top: 1.5rem; font-size: 0.9rem;">
+                    Previous Issue: Users couldn't verify photos they had already captured. This is now fixed!
+                </p>
+            </div>
+
             <!-- Features Overview -->
             <div class="download-card">
                 <h2 style="text-align: center; margin-bottom: 1rem; font-size: 2rem;">What's Included</h2>
@@ -325,9 +358,9 @@
                     </div>
 
                     <div class="feature-item">
-                        <div class="feature-icon">🔗</div>
-                        <h4>Blockchain Ready</h4>
-                        <p>Integration with Polygon for on-chain attestation (coming soon)</p>
+                        <div class="feature-icon">✅</div>
+                        <h4>Verify Existing Photos</h4>
+                        <p>Select photos from gallery to verify - now with full backend verification support</p>
                     </div>
                 </div>
             </div>
