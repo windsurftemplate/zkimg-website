@@ -319,12 +319,12 @@
                 <div class="tech-feature">
                     <div class="tech-icon"><img src="images/icon-photo.svg" alt="Mobile"></div>
                     <h3>Hardware-Backed Security</h3>
-                    <p>Keys stored in iOS Secure Enclave. App Attestation ensures only legitimate clients generate proofs.</p>
+                    <p>Keys stored in iOS Secure Enclave and Android Keystore (TEE/StrongBox). Device attestation ensures only legitimate clients generate proofs.</p>
                     <ul>
-                        <li>Private keys never leave device hardware</li>
-                        <li>iOS App Attestation prevents tampering</li>
+                        <li>Private keys never leave device hardware (Secure Enclave/StrongBox)</li>
+                        <li>iOS App Attestation & Android Play Integrity API</li>
                         <li>All images cryptographically signed at capture</li>
-                        <li>Device-bound identity without user tracking</li>
+                        <li>Camera source verification (detects screenshots)</li>
                     </ul>
                 </div>
 
